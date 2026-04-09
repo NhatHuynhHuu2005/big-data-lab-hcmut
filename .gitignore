@@ -1,0 +1,16 @@
+# Bỏ qua môi trường ảo Python
+.venv_wsl/
+venv/
+env/
+
+# Bỏ qua thư mục rác của Jupyter và Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Bỏ qua dữ liệu của Kafka/Zookeeper sinh ra (nếu bạn có mount volume ra ngoài)
+kafka_data/
+zookeeper_data/
+
+# (Tùy chọn) Bỏ qua các file zip/dữ liệu thô quá nặng nếu có
+*.zip
