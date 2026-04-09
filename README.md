@@ -41,6 +41,7 @@ The repository is organized by laboratory modules. Each folder contains its own 
 ├── .gitignore                  # Ignored files (venv, checkpoints, etc.)
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
+```
 
 ## 🚀 Getting Started
 
@@ -55,24 +56,24 @@ Ensure you have the following installed on your local machine:
 
 Clone this repository to your local machine:
 
-'''bash
+```bash
     git clone <YOUR_GITHUB_REPO_URL_HERE>
     cd big_data_course
-'''
+```
 
 Set up the virtual environment and install required dependencies:
 
-'''bash
+```bash
     python -m venv .venv_wsl
     source .venv_wsl/bin/activate  # On Linux/WSL
     pip install -r requirements.txt
-'''
+```
 
 ### 3. Running a specific Lab
 
 Navigate to the specific lab directory and follow its workflow. For instance, to run Lab 01 (Kafka & Spark integration):
 
-'''bash
+```bash
     cd Lab_01
 
     # 1. Start the local Kafka Cluster (3 Brokers in KRaft mode)
@@ -80,6 +81,6 @@ Navigate to the specific lab directory and follow its workflow. For instance, to
 
     # 2. Launch Jupyter Lab to execute the notebooks
     jupyter lab
-'''
+```
 
 *Note: Always remember to shut down Docker containers after finishing the lab to free up memory*
