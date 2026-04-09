@@ -57,16 +57,16 @@ Ensure you have the following installed on your local machine:
 Clone this repository to your local machine:
 
 ```bash
-    git clone <YOUR_GITHUB_REPO_URL_HERE>
-    cd big_data_course
+git clone <YOUR_GITHUB_REPO_URL_HERE>
+cd big_data_course
 ```
 
 Set up the virtual environment and install required dependencies:
 
 ```bash
-    python -m venv .venv_wsl
-    source .venv_wsl/bin/activate  # On Linux/WSL
-    pip install -r requirements.txt
+python -m venv .venv_wsl
+source .venv_wsl/bin/activate  # On Linux/WSL
+pip install -r requirements.txt
 ```
 
 ### 3. Running a specific Lab
@@ -74,13 +74,13 @@ Set up the virtual environment and install required dependencies:
 Navigate to the specific lab directory and follow its workflow. For instance, to run Lab 01 (Kafka & Spark integration):
 
 ```bash
-    cd Lab_01
+cd Lab_01
 
-    # 1. Start the local Kafka Cluster (3 Brokers in KRaft mode)
-    docker compose --profile kafka up -d
+# 1. Start the local Kafka Cluster (3 Brokers in KRaft mode)
+docker compose --profile kafka up -d
 
-    # 2. Launch Jupyter Lab to execute the notebooks
-    jupyter lab
+# 2. Launch Jupyter Lab to execute the notebooks
+jupyter lab
 ```
 
 *Note: Always remember to shut down Docker containers after finishing the lab to free up memory*
